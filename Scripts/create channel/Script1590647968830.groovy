@@ -20,10 +20,20 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://testcase-katalon.herokuapp.com/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_2f2733'), 
-    password)
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), password)
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/span_Sign in'))
+WebUI.click(findTestObject('Page_Mattermost/span_Sign in'))
+
+WebUI.click(findTestObject('Page_Town Square - abc Mattermost/span_'))
+
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/input_Name_newChannelName'), channel)
+
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_(optional)_newChannelPurpose'), id1)
+
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - abc Mattermost/textarea_(optional)_newChannelHeader'), 
+    id2)
+
+WebUI.click(findTestObject('Page_Town Square - abc Mattermost/span_Create Channel'))
 

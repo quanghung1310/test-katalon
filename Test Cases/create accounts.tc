@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login</name>
+   <name>create accounts</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>eb3d82be-cb03-46ad-8a86-aca3e3bad738</testCaseGuid>
+   <testCaseGuid>fa3f2d81-f116-4e29-9ea4-76e7147ec565</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>2be12239-582e-4b4a-9ed6-cc22714484b2</id>
+      <id>9f1398f5-cb07-4db7-8a94-fd729e108f4d</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7f6bbb4b-11aa-4205-be4b-36e3b1e07e3d</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>47842a37-5c5e-4fb0-acec-c2089db04631</id>
+      <id>216912f1-1a14-419d-b03b-6af19f657131</id>
       <masked>false</masked>
       <name>password</name>
    </variable>
