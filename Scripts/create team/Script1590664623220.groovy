@@ -16,23 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('login'), [('username') : 'test1', ('password') : 'aeHFOx8jV/A='], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.click(findTestObject('Page_Mattermost/span_Create a team'))
 
-WebUI.click(findTestObject('Page_Mattermost/span_Create one now'))
+WebUI.setText(findTestObject('Page_Mattermost/input_Team Name_teamNameInput'), name_team = 'test')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_concat(What  s your email address)_email'), email = 'test2@gmail.com')
+WebUI.click(findTestObject('Page_Mattermost/span_Next'))
 
-WebUI.setText(findTestObject('Page_Mattermost/input_Choose your username_name'), username = 'test2')
+WebUI.click(findTestObject('Page_Mattermost/span_Finish'))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_Choose your password_password'), password = 'CSt51UwWECc=')
+WebUI.click(findTestObject('Page_Town Square - test Mattermost/span_Skip Tutorial'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Create Account'))
-
-WebUI.click(findTestObject('Page_Mattermost/span_Logout'))
-
-WebUI.callTestCase(findTestCase('login'), [('username') : 'test1', ('password') : 'RAIVpflpDOg='], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_Mattermost/span_Logout'))
+WebUI.callTestCase(findTestCase('chat'), [:], FailureHandling.STOP_ON_FAILURE)
 

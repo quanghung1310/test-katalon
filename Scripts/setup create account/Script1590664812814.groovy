@@ -16,14 +16,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.click(findTestObject('Object Repository/Page_Mattermost - Join a team/span_Go to System Console'))
 
-WebUI.navigateToUrl('https://testcase-katalon.herokuapp.com/login')
+WebUI.click(findTestObject('Page_System Console - Mattermost/span_Signup'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.click(findTestObject('Page_System Console - Mattermost/input_Enable Open Server_TeamSettingsEnable_86f1f1'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_2f2733'), 
-    password)
-
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/span_Sign in'))
+WebUI.click(findTestObject('Page_System Console - Mattermost/span_Save'))
 

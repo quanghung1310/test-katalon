@@ -16,23 +16,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.setText(findTestObject('Page_Town Square - test Mattermost/textarea_Write to Town Square_post_textbox'), 'a')
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.setText(findTestObject('Page_Town Square - test Mattermost/textarea_a'), 'aa')
 
-WebUI.click(findTestObject('Page_Mattermost/span_Create one now'))
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - test Mattermost/textarea_aa'), 'aab')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_concat(What  s your email address)_email'), email = 'test2@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - test Mattermost/textarea_aab'), 'aabc')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_Choose your username_name'), username = 'test2')
+WebUI.click(findTestObject('Page_Town Square - test Mattermost/svg'))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_Choose your password_password'), password = 'CSt51UwWECc=')
+WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/img_People_emoji-1f60a'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Create Account'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/path'))
 
-WebUI.click(findTestObject('Page_Mattermost/span_Logout'))
-
-WebUI.callTestCase(findTestCase('login'), [('username') : 'test1', ('password') : 'RAIVpflpDOg='], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_Mattermost/span_Logout'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/img_People_emoji-1f611'))
 

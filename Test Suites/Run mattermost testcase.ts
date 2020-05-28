@@ -47,7 +47,7 @@
       <guid>9e42891a-c377-4b66-88a2-2c43e425589f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login</testCaseId>
+      <testCaseId>Test Cases/login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>fcb9a296-3aee-4355-bb87-744b814f38a8</id>
