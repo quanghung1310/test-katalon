@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>set a header</name>
+   <name>edit picture</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5b3d6f24-98a6-4bdb-b593-579ab9e74135</testCaseGuid>
+   <testCaseGuid>ab681a46-d810-40ca-9c7c-fb92b2fe22ad</testCaseGuid>
 </TestCaseEntity>

@@ -16,19 +16,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('Page_Town Square - test Mattermost/textarea_Write to Town Square_post_textbox'), 'a')
+WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('Page_Town Square - test Mattermost/textarea_a'), 'aa')
+WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_Town Square - test Mattermost/textarea_aa'), 'aab')
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.setText(findTestObject('Object Repository/Page_Town Square - test Mattermost/textarea_aab'), 'aabc')
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Page_Town Square - test Mattermost/svg'))
+WebUI.click(findTestObject('Page_Mattermost/span_Sign in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/img_People_emoji-1f60a'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/path'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/path'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Account Settings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/img_People_emoji-1f611'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Edit'))
+
+WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_New Email_primaryEmail'), new email)
+
+WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_Confirm Email_confirmEmail'), confirm)
+
+WebUI.setEncryptedText(findTestObject('Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 'RAIVpflpDOg=')
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Save'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_'))
 

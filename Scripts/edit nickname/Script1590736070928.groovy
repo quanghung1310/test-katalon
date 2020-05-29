@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://testcase-katalon.herokuapp.com/login')
+WebUI.navigateToUrl('http://localhost:8065/login')
 
 WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
@@ -26,11 +26,13 @@ WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communicat
 
 WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/div_te'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/path'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Account Settings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Leave Team'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Edit'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Yes'))
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Nickname_nickname'), name)
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Save'))
 

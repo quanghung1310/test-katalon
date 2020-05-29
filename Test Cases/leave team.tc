@@ -4,18 +4,18 @@
    <name>leave team</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>845857d7-0a57-4458-bdf9-43ea3cda0341</testCaseGuid>
+   <testCaseGuid>f8b97a88-54ec-4288-ad33-571b01097ede</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a2eb438b-aa7b-40bc-a8fd-3d8f339c548b</id>
+      <id>5b933383-56a3-4f59-962b-046f6771d17e</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>7fb8678d-d3e9-441b-a5a2-b284f9b24562</id>
+      <id>8fb71abc-383b-4b38-bf02-74f2ddd30cbd</id>
       <masked>false</masked>
       <name>password</name>
    </variable>

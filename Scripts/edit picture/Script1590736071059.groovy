@@ -14,4 +14,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://localhost:8065/login')
+
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
+
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Account Settings'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Edit'))
+
+WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Cancel'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_'))
 

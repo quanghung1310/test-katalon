@@ -16,17 +16,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('login'), [('username') : 'test1', ('password') : 'aeHFOx8jV/A='], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Page_Mattermost/span_Create a team'))
+WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_Team Name_teamNameInput'), name_team = 'test')
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.click(findTestObject('Page_Mattermost/span_Next'))
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Page_Mattermost/span_Finish'))
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_Town Square - test Mattermost/span_Skip Tutorial'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span'))
 
-WebUI.callTestCase(findTestCase('chat'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Account Settings'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Edit'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Username_username'), name)
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Save'))
 

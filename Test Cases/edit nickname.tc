@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>message</name>
+   <name>edit nickname</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f376de5b-3919-4be9-be2a-9326d882ba5d</testCaseGuid>
+   <testCaseGuid>e56d2ff7-0304-472b-b908-1d4b9698afc2</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>c29de832-f5db-42c1-8665-ed079b2e1c1b</id>
+      <id>ad0a6515-94de-48b7-b5d2-b560d31ca6a7</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>f9d6d81b-cac4-4f6c-9c8d-8105bffd7de8</id>
+      <id>92a9847c-d5c9-4d93-9c07-2da7708ef98d</id>
       <masked>false</masked>
-      <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>8888c01c-e26b-4661-8dce-133749913bf6</id>
-      <masked>false</masked>
-      <name>text</name>
+      <name>name</name>
    </variable>
 </TestCaseEntity>

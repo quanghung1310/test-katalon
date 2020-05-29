@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>create channel</name>
+   <name>chat</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>c408da13-be7a-42d8-91c6-c775426f9291</dataFileGUID>
+   <dataFileGUID>6826e5ad-6f9a-43df-a14f-4f46c442708b</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin admin town2</data>
-   <data>admin admin town3</data>
-   <data>admin admin town4</data>
-   <data>admin admin town5</data>
-   <data>admin admin town6</data>
+   <data>admin admin q%C6%B0e</data>
+   <data>admin admin a%C4%91%C3%A1</data>
+   <data>admin admin 3</data>
+   <data>admin admin asdr</data>
+   <data>admin admin cvbn</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>username</name>
@@ -25,7 +25,7 @@
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
-      <name>channel</name>
+      <name>chat</name>
       <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>create team</name>
+   <name>edit full name</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>96023325-9b88-4ea1-a2f4-49d1eda15a62</testCaseGuid>
+   <testCaseGuid>5e36f720-5698-4261-abec-1b4346f510eb</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>b707fe27-49cc-4180-b7e5-df99c63c1532</id>
+      <id>136ef894-3004-4eda-b344-1afa1529d052</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>d039ccf2-f6b0-4778-bae4-a8982e040ac4</id>
+      <id>14ef0578-5514-49f9-8b41-f925a3ddbb87</id>
       <masked>false</masked>
-      <name>password</name>
+      <name>fitstname</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a73ab834-7e16-4b78-b8ba-0bb94af67041</id>
+      <id>773ef6ff-0d94-4016-b1d3-0ff51a261962</id>
       <masked>false</masked>
-      <name>variable_1</name>
+      <name>lastname</name>
    </variable>
 </TestCaseEntity>
