@@ -4,25 +4,25 @@
    <name>create accounts</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>fa3f2d81-f116-4e29-9ea4-76e7147ec565</testCaseGuid>
+   <testCaseGuid>e15cc19e-6723-4d34-b339-845d275c881b</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>9f1398f5-cb07-4db7-8a94-fd729e108f4d</id>
+      <id>3dc0aeea-d6c0-40e3-a911-a51d1b089797</id>
       <masked>false</masked>
       <name>email</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>7f6bbb4b-11aa-4205-be4b-36e3b1e07e3d</id>
+      <id>46ba1f4d-b9d6-42af-9e43-787ffa0b04c6</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>216912f1-1a14-419d-b03b-6af19f657131</id>
+      <id>701fc877-6609-4c67-a522-96b58eb013b2</id>
       <masked>false</masked>
       <name>password</name>
    </variable>

@@ -20,10 +20,26 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_2f2733'), 
-    'aeHFOx8jV/A=')
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/span_Sign in'))
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/button_Set a Header'))
+
+for (def index : (1..5)) {
+    WebUI.setText(findTestObject('Object Repository/Page_Town Square - abc Mattermost/textarea_Edit the Channel Header_edit_textbox'), 
+        'h')
+}
+
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_h'), 'he')
+
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_he'), 'hel')
+
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_hel'), 'hell')
+
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_hell'), 'hello')
+
+WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_Save'))
 

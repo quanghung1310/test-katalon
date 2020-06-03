@@ -4,40 +4,26 @@
    <name>create channel</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>3dd28e72-4926-4fed-8cdd-a474aa683e43</testCaseGuid>
+   <testCaseGuid>8d5cb0bf-f299-4bba-a362-da81d971832e</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>07e0279c-d035-4496-b698-8e8075949455</id>
+      <id>a77e0874-85d4-4e7b-8071-ae47f425b694</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>64baab0c-304d-4f31-9951-c00a88cb7621</id>
+      <id>6b250f1c-2171-429c-a78f-f96312d50c35</id>
       <masked>false</masked>
       <name>password</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>b059c37a-08bf-40ae-a4fb-2f6f75709bf5</id>
+      <id>67f344d7-5fab-4f4e-8e8b-0367d302fb11</id>
       <masked>false</masked>
-      <name>channel</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>9bc3dc9e-b494-42f3-895b-8d498a384df1</id>
-      <masked>false</masked>
-      <name>id1</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>69b993ae-d82f-4270-afe6-fd3b794a1cc9</id>
-      <masked>false</masked>
-      <name>id2</name>
+      <name>variable_1</name>
    </variable>
 </TestCaseEntity>

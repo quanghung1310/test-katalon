@@ -18,15 +18,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://testcase-katalon.herokuapp.com/login')
+WebUI.navigateToUrl('http://localhost:8065/login')
 
 WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'iGDxf8hSRT4=')
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_Log Out'))
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_Write to Town Square_post_textbox'), chat)
 

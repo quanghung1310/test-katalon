@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>message</name>
+   <name>edit position</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f376de5b-3919-4be9-be2a-9326d882ba5d</testCaseGuid>
+   <testCaseGuid>fe96df8a-4f97-4a01-89fe-e96946919a36</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>c29de832-f5db-42c1-8665-ed079b2e1c1b</id>
+      <id>9a175519-31eb-4baf-93bd-aebd03e61c10</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>f9d6d81b-cac4-4f6c-9c8d-8105bffd7de8</id>
+      <id>45c49771-4e9d-4b9b-a8c5-dca62645afee</id>
       <masked>false</masked>
-      <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>8888c01c-e26b-4661-8dce-133749913bf6</id>
-      <masked>false</masked>
-      <name>text</name>
+      <name>variable_0</name>
    </variable>
 </TestCaseEntity>

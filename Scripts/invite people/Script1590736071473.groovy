@@ -18,28 +18,28 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://testcase-katalon.herokuapp.com/login')
+WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
 WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
 WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/button_Set a Header'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
 
-for (def index : (1..5)) {
-    WebUI.setText(findTestObject('Object Repository/Page_Town Square - abc Mattermost/textarea_Edit the Channel Header_edit_textbox'), 
-        'h')
-}
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Invite People'))
 
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_h'), 'he')
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/div_Add members or email addresses'))
 
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_he'), 'hel')
+WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_Add members or email addresses_react-_5a852a'), 
+    name)
 
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_hel'), 'hell')
+WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/div_hoa2'))
 
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_hell'), 'hello')
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Invite Members'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_Save'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/button_Done'))
+
+WebUI.closeBrowser()
 

@@ -18,17 +18,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://testcase-katalon.herokuapp.com/login')
+WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
 WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Page_Mattermost/span_Sign in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_town1'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/div_'))
 
-WebUI.click(findTestObject('Object Repository/Page_town1 - abc Mattermost/span_town1_channelHeaderDropdownIcon'))
+WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/input_Team Name_teamNameInput'), team)
 
-WebUI.click(findTestObject('Object Repository/Page_town1 - abc Mattermost/span_Leave Channel'))
+WebUI.click(findTestObject('Page_Town Square - abc Mattermost/button_Next'))
+
+WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_Finish'))
 

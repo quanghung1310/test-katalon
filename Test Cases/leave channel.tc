@@ -4,5 +4,12 @@
    <name>leave channel</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a04d21a7-f94e-459b-a705-5297d035c200</testCaseGuid>
+   <testCaseGuid>84c04b00-b4e1-4049-9227-7a999627bbbc</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>14405dae-5949-4026-8abf-0e4e697d359c</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
 </TestCaseEntity>

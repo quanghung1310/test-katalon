@@ -8,19 +8,14 @@
    <dataFileGUID>86b9ea2d-df0e-40cd-a067-c55300a5341b</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>hoa1 12345</data>
-   <data>hoa2 12345</data>
-   <data>hoa3 12345</data>
-   <data>hoa4 12345</data>
-   <data>hoa5 12345</data>
+   <data>hoa1</data>
+   <data>hoa2</data>
+   <data>hoa3</data>
+   <data>hoa4</data>
+   <data>hoa5</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>username</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>1</columnIndex>
-      <name>password</name>
       <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
