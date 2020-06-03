@@ -20,11 +20,27 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Mattermost/input_All team communication in one place s_703ef5'), 
+    username)
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Mattermost/input_All team communication in one place s_2f2733'), 
+    'RAIVpflpDOg=')
 
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Mattermost/input_All team communication in one place s_2f2733'), 
+    Keys.chord(Keys.ENTER))
 
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_Write to Town Square_post_textbox'), chat)
+WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Town Square - test Mattermost/span_Town Square'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Town Square - test Mattermost/textarea_Write to Town Square_post_textbox'), 
+    chat)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Town Square - test Mattermost/textarea_Write to Town Square_post_textbox'),
+	Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Town Square - test Mattermost/svg'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Town Square - test Mattermost/span_Log Out'), 
+    3)
+
+WebUI.click(findTestObject('Object Repository/Page_Town Square - test Mattermost/Page_Town Square - test Mattermost/span_Log Out'))
 
