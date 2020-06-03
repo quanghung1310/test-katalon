@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>create channel</name>
+   <name>message</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>c408da13-be7a-42d8-91c6-c775426f9291</dataFileGUID>
+   <dataFileGUID>8e28f8f8-16ab-4e14-a9c3-39fe0489257e</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin admin town2</data>
-   <data>admin admin town3</data>
-   <data>admin admin town4</data>
-   <data>admin admin town5</data>
-   <data>admin admin town6</data>
+   <data>admin admin qwe</data>
+   <data>admin admin ewre</data>
+   <data>admin admin asd</data>
+   <data>admin admin eq</data>
+   <data>admin admin eq2</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>username</name>
@@ -25,7 +25,7 @@
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
-      <name>channel</name>
+      <name>text</name>
       <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

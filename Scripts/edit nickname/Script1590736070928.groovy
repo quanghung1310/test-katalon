@@ -18,22 +18,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://testcase-katalon.herokuapp.com/login')
+WebUI.navigateToUrl('http://localhost:8065/login')
 
 WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), password)
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Page_Mattermost/span_Sign in'))
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_Town Square - abc Mattermost/span_'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span'))
 
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/input_Name_newChannelName'), channel)
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Account Settings'))
 
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_(optional)_newChannelPurpose'), id1)
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Edit'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Town Square - abc Mattermost/textarea_(optional)_newChannelHeader'), 
-    id2)
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Nickname_nickname'), name)
 
-WebUI.click(findTestObject('Page_Town Square - abc Mattermost/span_Create Channel'))
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Save'))
 

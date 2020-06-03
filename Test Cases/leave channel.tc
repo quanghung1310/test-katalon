@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login</name>
+   <name>leave channel</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a01f3aff-a367-4a60-8bb9-429e3dc7b419</testCaseGuid>
+   <testCaseGuid>84c04b00-b4e1-4049-9227-7a999627bbbc</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>4b0afdd7-8743-416f-bb1e-20b309c220b5</id>
+      <id>14405dae-5949-4026-8abf-0e4e697d359c</id>
       <masked>false</masked>
       <name>username</name>
    </variable>

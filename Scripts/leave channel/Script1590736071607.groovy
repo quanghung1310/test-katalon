@@ -20,19 +20,15 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.click(findTestObject('Page_Mattermost/span_Create one now'))
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.setText(findTestObject('Page_Mattermost/input_concat(What  s your email address)_email'), email = 'test2@gmail.com')
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'aeHFOx8jV/A=')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_Choose your username_name'), username = 'test2')
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_Choose your password_password'), password = 'CSt51UwWECc=')
+WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_town1'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Create Account'))
+WebUI.click(findTestObject('Object Repository/Page_town1 - abc Mattermost/span_town1_channelHeaderDropdownIcon'))
 
-WebUI.click(findTestObject('Page_Mattermost/span_Logout'))
-
-WebUI.callTestCase(findTestCase('login'), [('username') : 'test1', ('password') : 'RAIVpflpDOg='], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_Mattermost/span_Logout'))
+WebUI.click(findTestObject('Object Repository/Page_town1 - abc Mattermost/span_Leave Channel'))
 

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login</name>
+   <name>logout</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a01f3aff-a367-4a60-8bb9-429e3dc7b419</testCaseGuid>
+   <testCaseGuid>1cbe4dba-e155-45c0-a5f0-973b7a067df6</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>4b0afdd7-8743-416f-bb1e-20b309c220b5</id>
+      <id>df75772b-0915-4f4d-b57c-dd3e8c985b87</id>
       <masked>false</masked>
       <name>username</name>
    </variable>

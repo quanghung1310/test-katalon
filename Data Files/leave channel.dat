@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>create channel</name>
+   <name>leave channel</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>c408da13-be7a-42d8-91c6-c775426f9291</dataFileGUID>
+   <dataFileGUID>2c6d0830-70af-40bd-8cae-fd17630619c6</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin admin town2</data>
-   <data>admin admin town3</data>
-   <data>admin admin town4</data>
-   <data>admin admin town5</data>
-   <data>admin admin town6</data>
+   <data>hoa1</data>
+   <data>hoa2</data>
+   <data>hoa</data>
+   <data>hoa3</data>
+   <data>hoa4</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>username</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>1</columnIndex>
-      <name>password</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>2</columnIndex>
-      <name>channel</name>
       <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

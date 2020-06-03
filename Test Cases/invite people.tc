@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>chat</name>
+   <name>invite people</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>834bf288-7854-4374-b893-734031934b59</testCaseGuid>
+   <testCaseGuid>3c2fae35-d8e5-40a9-aeb1-233a07918bc5</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>ccebb156-3510-4de4-b7b1-97eccdcce91e</id>
+      <id>9330d120-9d68-45fa-b8b5-ac50741c349f</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>4bc95d7e-bff2-4161-acbf-45ec762dc01d</id>
+      <id>9cd85ad0-8137-4205-b976-1f1135ebd5b8</id>
       <masked>false</masked>
-      <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>163136b0-774f-464b-9f22-61561ec689ea</id>
-      <masked>false</masked>
-      <name>chat</name>
+      <name>name</name>
    </variable>
 </TestCaseEntity>

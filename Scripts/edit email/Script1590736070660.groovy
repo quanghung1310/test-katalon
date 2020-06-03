@@ -20,10 +20,25 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_2f2733'), 
-    'aeHFOx8jV/A=')
+WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/span_Sign in'))
+WebUI.click(findTestObject('Page_Mattermost/span_Sign in'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/path'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Account Settings'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Edit'))
+
+WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_New Email_primaryEmail'), new email)
+
+WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_Confirm Email_confirmEmail'), confirm)
+
+WebUI.setEncryptedText(findTestObject('Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 'RAIVpflpDOg=')
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Save'))
+
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_'))
 
