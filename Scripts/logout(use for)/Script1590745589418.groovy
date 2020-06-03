@@ -17,37 +17,18 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
-
+for(int i=0;i<3;i++){
 WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
 
 WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
 WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_DIRECT MESSAGES'))
+WebUI.click(findTestObject('Page_Town Square - teamm5 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_'))
+WebUI.click(findTestObject('Page_Town Square - teamm5 Mattermost/span_Log Out'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/i_hoa1gmailcom_fa fa-plus'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_Go'))
-
-WebUI.acceptAlert()
-
-for (def text : (1..5)) {
 }
-
-WebUI.setText(findTestObject('Object Repository/Page_hoa1 - team1 Mattermost/textarea_Write to hoa1_post_textbox'), 'h')
-
-WebUI.setText(findTestObject('Object Repository/Page_hoa1 - team1 Mattermost/textarea_h'), 'he')
-
-WebUI.setText(findTestObject('Object Repository/Page_hoa1 - team1 Mattermost/textarea_he'), 'hel')
-
-WebUI.setText(findTestObject('Object Repository/Page_hoa1 - team1 Mattermost/textarea_hel'), 'hell')
-
-WebUI.setText(findTestObject('Object Repository/Page_hoa1 - team1 Mattermost/textarea_hell'), 'hello')
-
 WebUI.closeBrowser()
-

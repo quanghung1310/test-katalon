@@ -24,26 +24,16 @@ WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in on
 
 WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Page_Mattermost/button_Sign in'))
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/path'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Account Settings'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Team Settings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_Security'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Edit'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Edit'))
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/input_Team Description_teamDescription'), 
+    inf)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 
-    'RAIVpflpDOg=')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_New Password_newPassword'), 
-    'RAIVpflpDOg=')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Retype New Password_confirmPassword'), 
-    'RAIVpflpDOg=')
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Save'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Save'))
 
