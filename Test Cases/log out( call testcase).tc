@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>log out( call testcase)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5d3fab6e-5f70-4df1-ba0e-710da56d6d4f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8efd7d3a-c30c-451a-8f2b-9147f96fa1c6</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>
