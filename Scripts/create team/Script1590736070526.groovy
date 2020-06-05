@@ -16,21 +16,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_admin_style--none sidebar-header-dropdown__icon'))
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/a_Create a Team'))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
+WebUI.setText(findTestObject('Page_Town Square - hung Mattermost/input_Team Name_teamNameInput'), team)
 
-WebUI.click(findTestObject('Page_Mattermost/span_Sign in'))
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_Next'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/div_'))
-
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/input_Team Name_teamNameInput'), team)
-
-WebUI.click(findTestObject('Page_Town Square - abc Mattermost/button_Next'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_Finish'))
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_Finish'))
 

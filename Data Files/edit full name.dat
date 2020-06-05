@@ -8,23 +8,18 @@
    <dataFileGUID>839b258a-8aee-49f3-bd20-4b9eb9698fd6</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin qwe asd</data>
-   <data>admin %21234 1e2e</data>
-   <data>admin 12e1 dawe2</data>
-   <data>admin d12e vae2</data>
-   <data>admin 1243 asd2</data>
+   <data>qwe asd</data>
+   <data>%21234 1e2e</data>
+   <data>12e1 dawe2</data>
+   <data>d12e vae2</data>
+   <data>1243 asd2</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>username</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>1</columnIndex>
       <name>firstname</name>
       <size>5</size>
    </internalDataColumns>
    <internalDataColumns>
-      <columnIndex>2</columnIndex>
+      <columnIndex>1</columnIndex>
       <name>lastname</name>
       <size>5</size>
    </internalDataColumns>

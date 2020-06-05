@@ -8,22 +8,8 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>b707fe27-49cc-4180-b7e5-df99c63c1532</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>d039ccf2-f6b0-4778-bae4-a8982e040ac4</id>
-      <masked>false</masked>
-      <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>a73ab834-7e16-4b78-b8ba-0bb94af67041</id>
       <masked>false</masked>
-      <name>variable_1</name>
+      <name>team</name>
    </variable>
 </TestCaseEntity>

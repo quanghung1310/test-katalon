@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8ebf8157-c938-484d-bf29-578e8274e276</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e679ee67-34ad-4641-b88e-319491868b7f</id>
+      <masked>false</masked>
+      <name>channelName</name>
+   </variable>
 </TestCaseEntity>

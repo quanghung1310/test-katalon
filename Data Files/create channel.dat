@@ -8,23 +8,13 @@
    <dataFileGUID>c408da13-be7a-42d8-91c6-c775426f9291</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin admin town2</data>
-   <data>admin admin town3</data>
-   <data>admin admin town4</data>
-   <data>admin admin town5</data>
-   <data>admin admin town6</data>
+   <data>town2</data>
+   <data>town3</data>
+   <data>town4</data>
+   <data>town5</data>
+   <data>1234151</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>username</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>1</columnIndex>
-      <name>password</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>2</columnIndex>
       <name>channel</name>
       <size>5</size>
    </internalDataColumns>

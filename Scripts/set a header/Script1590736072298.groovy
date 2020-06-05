@@ -16,30 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.click(findTestObject('Page_Town Square - teamm5 Mattermost/button_Set a Header'))
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
+WebUI.setText(findTestObject('Page_Town Square - teamm5 Mattermost/textarea_Edit the Channel Header_edit_textbox'), header)
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
+WebUI.click(findTestObject('Page_Town Square - teamm5 Mattermost/saveHeader'))
 
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/button_Set a Header'))
-
-for (def index : (1..5)) {
-    WebUI.setText(findTestObject('Object Repository/Page_Town Square - abc Mattermost/textarea_Edit the Channel Header_edit_textbox'), 
-        'h')
-}
-
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_h'), 'he')
-
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_he'), 'hel')
-
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_hel'), 'hell')
-
-WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/textarea_hell'), 'hello')
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_Save'))
+WebUI.closeBrowser()
 

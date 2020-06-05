@@ -3,10 +3,10 @@
    <description></description>
    <name>edit email</name>
    <tag></tag>
-   <containsHeaders>false</containsHeaders>
+   <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>25011115-207d-49f6-b5ee-55b9d1304a50</dataFileGUID>
-   <dataSourceUrl>../Desktop/testcase/no3.csv</dataSourceUrl>
+   <dataSourceUrl>no3.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

@@ -8,20 +8,6 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>ccebb156-3510-4de4-b7b1-97eccdcce91e</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>4bc95d7e-bff2-4161-acbf-45ec762dc01d</id>
-      <masked>false</masked>
-      <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>163136b0-774f-464b-9f22-61561ec689ea</id>
       <masked>false</masked>
       <name>chat</name>

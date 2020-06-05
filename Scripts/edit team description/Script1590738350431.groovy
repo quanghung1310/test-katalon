@@ -16,24 +16,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
-
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
-
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
-
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/path'))
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_admin_style--none sidebar-header-dropdown__icon'))
 
 WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Team Settings'))
 
 WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Edit'))
 
 WebUI.setText(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/input_Team Description_teamDescription'), 
-    inf)
+    'this is team description')
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Save'))
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_SaveTeam'))
 

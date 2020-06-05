@@ -5,4 +5,25 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>eec3bdb4-d4ac-44fb-aeb1-b2513a265ddf</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a19b1896-e968-4d50-b9df-9bbf5c903e30</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>49d9fb1a-bf4c-430c-a177-4f8134e98911</id>
+      <masked>false</masked>
+      <name>confirm</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>44b238d0-3ae8-425d-a713-4fe07ea304cb</id>
+      <masked>false</masked>
+      <name>curPass</name>
+   </variable>
 </TestCaseEntity>

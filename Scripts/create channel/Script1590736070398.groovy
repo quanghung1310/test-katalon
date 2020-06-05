@@ -16,19 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://localhost:8065/login')
-
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
-
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
-
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Town Square - abc Mattermost/span_'))
 
 WebUI.setText(findTestObject('Page_Town Square - abc Mattermost/input_Name_newChannelName'), channel)
+
+WebUI.verifyTextNotPresent('A channel with that name already exists on the same team.', false)
 
 WebUI.click(findTestObject('Page_Town Square - abc Mattermost/span_Create Channel'))
 

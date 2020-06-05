@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>9f60f387-48eb-45d6-ad37-78a6dced72a3</dataFileGUID>
-   <dataSourceUrl>C:\Users\ADMIN\Desktop\testcase\no4.csv</dataSourceUrl>
+   <dataSourceUrl>C:\Users\hung\git\testcase-katalon\no4.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

@@ -15,8 +15,8 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>4ab7a43d-dd5d-447e-9e93-1078f3a31d1b</id>
+      <id>2ad04bcd-5a04-4c00-888d-fe3205af6e3a</id>
       <masked>false</masked>
-      <name>variable_0</name>
+      <name>newUsername</name>
    </variable>
 </TestCaseEntity>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>direct message</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>e57742b2-6608-4937-9bb0-70a737774c4f</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>hi+chatbox</data>
+   <data>what%27s+your+name</data>
+   <data>do+you+like+me</data>
+   <data>don%27t+just+say+one+thing+link+that</data>
+   <data>bye</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>message</name>
+      <size>5</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

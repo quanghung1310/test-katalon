@@ -26,9 +26,17 @@ WebUI.setText(findTestObject('Page_Mattermost/input_concat(What  s your email ad
 
 WebUI.setText(findTestObject('Page_Mattermost/input_Choose your username_name'), username)
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_Choose your password_password'), 'aeHFOx8jV/A=')
+WebUI.setText(findTestObject('Page_Mattermost/input_Choose your password_password'), password)
 
 WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Create Account'))
 
-WebUI.click(findTestObject('Page_Mattermost/span_Logout'))
+WebUI.click(findTestObject('Page_Mattermost/span_Create a team'))
+
+WebUI.setText(findTestObject('Page_Mattermost/input_Team Name_teamNameInput'), username)
+
+WebUI.click(findTestObject('Page_Mattermost/button_Next'))
+
+WebUI.click(findTestObject('Page_Mattermost/button_Finish'))
+
+WebUI.closeBrowser()
 

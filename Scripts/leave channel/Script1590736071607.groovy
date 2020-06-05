@@ -16,19 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/span_1234151'))
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/span_aaa_channelHeaderDropdownIcon'))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'aeHFOx8jV/A=')
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/span_Leave Channel'))
 
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/span_town1'))
-
-WebUI.click(findTestObject('Object Repository/Page_town1 - abc Mattermost/span_town1_channelHeaderDropdownIcon'))
-
-WebUI.click(findTestObject('Object Repository/Page_town1 - abc Mattermost/span_Leave Channel'))
+WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

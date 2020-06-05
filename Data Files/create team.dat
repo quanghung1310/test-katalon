@@ -8,23 +8,13 @@
    <dataFileGUID>eda600d7-c48d-4243-8179-e5c3a7eb2f5e</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin admin team3</data>
-   <data>admin admin team4</data>
-   <data>admin admin team5</data>
-   <data>admin admin team6</data>
-   <data>admin admin team7</data>
+   <data>team3</data>
+   <data>team4</data>
+   <data>team5</data>
+   <data>team6</data>
+   <data>team7</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>username</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>1</columnIndex>
-      <name>password</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>2</columnIndex>
       <name>team</name>
       <size>5</size>
    </internalDataColumns>

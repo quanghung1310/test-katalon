@@ -8,22 +8,8 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a77e0874-85d4-4e7b-8071-ae47f425b694</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>6b250f1c-2171-429c-a78f-f96312d50c35</id>
-      <masked>false</masked>
-      <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>67f344d7-5fab-4f4e-8e8b-0367d302fb11</id>
       <masked>false</masked>
-      <name>variable_1</name>
+      <name>channel</name>
    </variable>
 </TestCaseEntity>

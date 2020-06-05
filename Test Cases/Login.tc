@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>username</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e32ee907-811d-402f-b4e7-f7bd822630c8</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
 </TestCaseEntity>

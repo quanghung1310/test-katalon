@@ -22,8 +22,9 @@ WebUI.navigateToUrl('http://localhost:8065/login')
 
 WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_703ef5'), username)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_2f2733'), 
-    'aeHFOx8jV/A=')
+WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_All team communication in one place s_2f2733'), password)
 
 WebUI.click(findTestObject('Object Repository/Page_Mattermost/span_Sign in'))
+
+WebUI.verifyTextPresent('PUBLIC CHANNELS', true)
 

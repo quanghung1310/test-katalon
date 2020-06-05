@@ -8,23 +8,13 @@
    <dataFileGUID>6826e5ad-6f9a-43df-a14f-4f46c442708b</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin admin q%C6%B0e</data>
-   <data>admin admin a%C4%91%C3%A1</data>
-   <data>admin admin 3</data>
-   <data>admin admin asdr</data>
-   <data>admin admin cvbn</data>
+   <data>first+chat</data>
+   <data>Second+chat</data>
+   <data>3th+chat</data>
+   <data>4th+chat</data>
+   <data>5th+chat</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>username</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>1</columnIndex>
-      <name>password</name>
-      <size>5</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>2</columnIndex>
       <name>chat</name>
       <size>5</size>
    </internalDataColumns>

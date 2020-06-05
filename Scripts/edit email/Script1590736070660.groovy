@@ -16,29 +16,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_Account Settings'))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/h4_Email'))
 
-WebUI.click(findTestObject('Page_Mattermost/span_Sign in'))
+WebUI.setText(findTestObject('Page_Town Square - hung Mattermost/input_New Email_primaryEmail'), email)
 
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/path'))
+WebUI.setText(findTestObject('Page_Town Square - hung Mattermost/input_Confirm Email_confirmEmail'), confirm)
 
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Account Settings'))
-
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Edit'))
-
-WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_New Email_primaryEmail'), new email)
-
-WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_Confirm Email_confirmEmail'), confirm)
-
-WebUI.setEncryptedText(findTestObject('Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 'RAIVpflpDOg=')
+WebUI.setText(findTestObject('Page_Town Square - hung Mattermost/input_Current Password_currentPassword'), curPass)
 
 WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Save'))
 
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_'))
+WebUI.verifyElementNotPresent(findTestObject('Page_Town Square - team6 Mattermost/serverError'), 0)
+
+WebUI.verifyElementNotPresent(findTestObject('Page_Town Square - team6 Mattermost/clientError'), 0)
+
+WebUI.closeBrowser()
 

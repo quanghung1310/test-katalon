@@ -18,28 +18,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.navigateToUrl('http://localhost:8065/')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
 
 WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Page_Mattermost/button_Sign in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
+WebUI.click(findTestObject('Page_Town Square - hoa3 Mattermost/button_Invite others to this team'))
 
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Invite People'))
+WebUI.click(findTestObject('Page_Town Square - hoa3 Mattermost/div_Add members'))
 
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/div_Add members or email addresses'))
+WebUI.setText(findTestObject('Page_Town Square - hoa3 Mattermost/input_Add members_react-select-2-input'), 'hoa2')
 
-WebUI.setText(findTestObject('Page_Town Square - team1 Mattermost/input_Add members or email addresses_react-_5a852a'), 
-    name)
+WebUI.sendKeys(findTestObject('Page_Town Square - hoa3 Mattermost/input_Add members_react-select-2-input'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/div_hoa2'))
+WebUI.click(findTestObject('Page_Town Square - hoa3 Mattermost/button_Invite Members'))
 
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/span_Invite Members'))
-
-WebUI.click(findTestObject('Page_Town Square - team1 Mattermost/button_Done'))
+WebUI.click(findTestObject('Page_Town Square - hoa3 Mattermost/button_Done'))
 
 WebUI.closeBrowser()
 

@@ -8,13 +8,6 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>136ef894-3004-4eda-b344-1afa1529d052</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>14ef0578-5514-49f9-8b41-f925a3ddbb87</id>
       <masked>false</masked>
       <name>fitstname</name>

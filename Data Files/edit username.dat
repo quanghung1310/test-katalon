@@ -8,11 +8,11 @@
    <dataFileGUID>60179d08-ea62-4898-9a0a-954b18216528</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin admin</data>
-   <data>admin admin</data>
-   <data>admin admin</data>
-   <data>admin admin</data>
-   <data>admin admin</data>
+   <data>admin admin01</data>
+   <data>admin01 admin02</data>
+   <data>admin02 admin03</data>
+   <data>admin03 admin04</data>
+   <data>admin04 admin</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>username</name>
@@ -20,7 +20,7 @@
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
-      <name>name</name>
+      <name>new username</name>
       <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

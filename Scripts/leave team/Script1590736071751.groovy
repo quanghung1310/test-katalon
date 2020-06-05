@@ -16,21 +16,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
+for (int i = 0; i < 3; i++) {
+	WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+	WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_admin_style--none sidebar-header-dropdown__icon'))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
+	WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_Leave Team'))
 
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+	WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_Yes'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - abc Mattermost/div_te'))
+}
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/path'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Leave Team'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Yes'))
+WebUI.closeBrowser()
 

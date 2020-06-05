@@ -16,23 +16,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('admin login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+for (int row = 1; row <= findTestData('ChannelName').getRowNumbers(); row++) {
+    WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/button_Town Square'))
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
+    WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Rename Channel'))
 
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
+    WebUI.setText(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/input_Display Name_display_name'), 
+        findTestData('ChannelName').getValue('channelName', row))
 
-WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
-for(int i=0;i<=3;i++){
-WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/button_Town Square'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Rename Channel'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/input_Display Name_display_name'), 
-    'hello')
-
-WebUI.click(findTestObject('Page_Town Square - teamm5 Mattermost/span_Save'))
-
+    WebUI.click(findTestObject('Page_Town Square - teamm5 Mattermost/span_Save'))
 }
+

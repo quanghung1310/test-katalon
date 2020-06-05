@@ -16,34 +16,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login'), [('username') : 'admin', ('password') : curPass], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://localhost:8065/login')
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/button_admin_style--none sidebar-header-dropdown__icon'))
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
-
-WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
-
-WebUI.click(findTestObject('Page_Mattermost/button_Sign in'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Account Settings'))
+WebUI.click(findTestObject('Page_Town Square - team6 Mattermost/button_Account Settings'))
 
 WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_Security'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Edit'))
+WebUI.click(findTestObject('Page_Town Square - hung Mattermost/h4_Password'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 
-    'RAIVpflpDOg=')
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 
+    curPass)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_New Password_newPassword'), 
-    'RAIVpflpDOg=')
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_New Password_newPassword'), newPass)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Retype New Password_confirmPassword'), 
-    'RAIVpflpDOg=')
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Retype New Password_confirmPassword'), 
+    repeatPass)
 
 WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Save'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_'))
+WebUI.verifyElementNotPresent(findTestObject('Page_Town Square - team6 Mattermost/serverError'), 0)
+
+WebUI.verifyElementNotPresent(findTestObject('Page_Town Square - team6 Mattermost/clientError'), 0)
+
+WebUI.closeBrowser()
 

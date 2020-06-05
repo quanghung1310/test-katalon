@@ -27,18 +27,6 @@
       <variableLink>
          <testDataLinkId>45073a4b-7529-4449-8abe-4a44dea852e5</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>username</value>
-         <variableId>ccebb156-3510-4de4-b7b1-97eccdcce91e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>45073a4b-7529-4449-8abe-4a44dea852e5</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>password</value>
-         <variableId>4bc95d7e-bff2-4161-acbf-45ec762dc01d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>45073a4b-7529-4449-8abe-4a44dea852e5</testDataLinkId>
-         <type>DATA_COLUMN</type>
          <value>chat</value>
          <variableId>163136b0-774f-464b-9f22-61561ec689ea</variableId>
       </variableLink>

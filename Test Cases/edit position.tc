@@ -8,15 +8,8 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>9a175519-31eb-4baf-93bd-aebd03e61c10</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>45c49771-4e9d-4b9b-a8c5-dca62645afee</id>
       <masked>false</masked>
-      <name>variable_0</name>
+      <name>position</name>
    </variable>
 </TestCaseEntity>
