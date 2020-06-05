@@ -19,31 +19,29 @@ import org.openqa.selenium.Keys as Keys
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:8065/login')
+if(true){
+	
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
 
 WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Page_Mattermost/button_Sign in'))
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
+WebUI.click(findTestObject('Object Repository/Page_hello - teamm5 Mattermost/svg'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Account Settings'))
+WebUI.click(findTestObject('Page_hello - teamm5 Mattermost/span_Account Settings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_Security'))
+WebUI.click(findTestObject('Page_hello - teamm5 Mattermost/span_Edit'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Edit'))
+WebUI.setText(findTestObject('Object Repository/Page_hello - teamm5 Mattermost/input_Nickname_nickname'), 'admin123')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 
-    'RAIVpflpDOg=')
+WebUI.click(findTestObject('Page_hello - teamm5 Mattermost/span_Save'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_New Password_newPassword'), 
-    'RAIVpflpDOg=')
+WebUI.click(findTestObject('Page_hello - teamm5 Mattermost/span_'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Retype New Password_confirmPassword'), 
-    'RAIVpflpDOg=')
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Save'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_'))
+WebUI.closeBrowser()
+}
+else
+System.out.println("condition fail");
 

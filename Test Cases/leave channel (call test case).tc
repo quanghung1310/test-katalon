@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>leave channel (call test case)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3205b56a-33db-4760-8e8c-c709c1cf0a6e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0fa60e6b-d72b-49b2-89d3-bd41d07a6887</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

@@ -20,30 +20,19 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:8065/login')
 
-WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), username)
+WebUI.setText(findTestObject('Page_Mattermost/input_All team communication in one place s_703ef5'), 'admin')
 
 WebUI.setEncryptedText(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), 'RAIVpflpDOg=')
 
-WebUI.click(findTestObject('Page_Mattermost/button_Sign in'))
+WebUI.sendKeys(findTestObject('Page_Mattermost/input_All team communication in one place s_2f2733'), Keys.chord(Keys.ENTER))
+for(int i=0;i<=3;i++){
+WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/button_Town Square'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_admin_style--none sidebar-header-dro_b41f5f'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/span_Rename Channel'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Account Settings'))
+WebUI.setText(findTestObject('Object Repository/Page_Town Square - teamm5 Mattermost/input_Display Name_display_name'), 
+    'hello')
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/button_Security'))
+WebUI.click(findTestObject('Page_Town Square - teamm5 Mattermost/span_Save'))
 
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Edit'))
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Current Password_currentPassword'), 
-    'RAIVpflpDOg=')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_New Password_newPassword'), 
-    'RAIVpflpDOg=')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/input_Retype New Password_confirmPassword'), 
-    'RAIVpflpDOg=')
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_Save'))
-
-WebUI.click(findTestObject('Object Repository/Page_Town Square - team1 Mattermost/span_'))
-
+}
